@@ -1,25 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  background-color: var(--red)
+  background-image: url('../src/images/background1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 :root {
-  --red: rgb(218, 72, 72);
-  --white: #ffffff;
-  --off-white: #fceade;
+  --card-backg: #271513;
+  --card-border: #EBC061;
+  --off-white: #fcf1eb;
   --black: #22181c;
   --brown: #5e574d;
+}
+
+#title {
+  color: var(--off-white)
 }
 
 .drink-card {
   margin: 10px 0px;
   width: 350px;
   border-radius: 10px;
-  color: var(--black);
-  border: 2px solid var(--white);
-  background-color: var(--off-white);
+  color: var(--off-white);
+  border: 2px solid var(--card-border);
+  background-color: var(--card-backg);
   box-shadow: var(--black) 3px 3px 5px;
 }
 .drink-card:hover {
   transform:scale(1.02);
 }
+.drink-card img {
+  width: 150px;
+}
 
+button {
+  display: block;
+}
